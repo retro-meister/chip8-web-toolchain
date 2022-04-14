@@ -1,0 +1,25 @@
+[package]
+name = "c8-web-toolchain"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+wasm-bindgen = { version = "0.2.63", features = ["serde-serialize"] }
+num_enum = "0.5.6"
+getrandom = { version = "0.2.4", features = ["js"] }
+array-init = "2.0.0"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "console",
+]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"

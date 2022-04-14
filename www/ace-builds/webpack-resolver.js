@@ -1,0 +1,2 @@
+ace.config.setModuleUrl('ace/mode/c8i', require('file-loader?esModule=false!./src-noconflict/mode-c8i.js'))
+ace.config.setModuleUrl('ace/theme/chaos', require('file-loader?esModule=false!./src-noconflict/theme-chaos.js'))

@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+textarea {
+    background-color: #1f1f1f !important;
+    color: white !important;
+}
+
+.split-col {
+    display: flex;
+    flex-direction: row;
+    background-color: #1b1b15;
+}
+
+.gutter {
+    background-color: #0a0a0a;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+    cursor: col-resize;
+}
+
+#editor {
+    width: 1px;
+    height: 300px;
+    position: relative;
+}
+
+.ace_editor {
+    direction: ltr;
+    font: 14px 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+.list-group-mine .list-group-item {
+    background-color: #272822;
+    border-top: 1px solid #383838;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    color: rgb(233, 233, 233);
+}
+
+.list-group-mine .list-group-item:hover {
+    background-color: #800000;
+}
+
+.select-rom {
+    border-radius: 12px;
+    display: inline-block;
+    overflow: hidden;
+    background: #ffffff3c;
+    border: 1px solid #686868;
+    text-align-last:center
+}
+
+.select-box {
+    width: 6em;
+    height: 40px;
+    border: 0px;
+    outline: none;
+}
